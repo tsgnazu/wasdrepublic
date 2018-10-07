@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <title>WASD Republic</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/bower_components/fontawesome/css/all.css">
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/bower_components/ionicons/css/ionicons.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/navigation.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/bower_components/flickity/dist/flickity.min.css">
+
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/default-skin/default-skin.css">
+
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/datetimepicker/build/jquery.datetimepicker.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/navigation.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/prism/themes/prism-tomorrow.css">
+
+    <!-- Summernote -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/summernote/dist/summernote.css">
+
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/godlike.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+
+<body>
+    <!-- START: Page Preloader -->
+    <div class="nk-preloader">
+        <!--
+         Preloader animation
+         data-close-... data used for closing preloader
+         data-open-...  data used for opening preloader
+    -->
+        <div class="nk-preloader-bg" style="background-color: #000;" data-close-frames="23" data-close-speed="1.2"
+            data-close-sprites="./assets/images/preloader-bg.png" data-open-frames="23" data-open-speed="1.2"
+            data-open-sprites="./assets/images/preloader-bg-bw.png">
+        </div>
+
+        <div class="nk-preloader-content">
+            <div>
+                <img class="nk-img" src="assets/images/logo.gif" alt="" width="35%">
+                <div class="nk-preloader-animation"></div>
+            </div>
+        </div>
+
+        <div class="nk-preloader-skip">Skip</div>
+    </div>
+    <!-- END: Page Preloader -->
+
+    <!-- START: Page Background -->
+    <div class="nk-page-background op-5" data-bg-mp4="assets/video/bg-2.mp4" data-bg-webm="assets/video/bg-2.webm"
+        data-bg-ogv="assets/video/bg-2.ogv" data-bg-poster="assets/video/bg-2.jpg"></div>
+    <!-- END: Page Background -->
+
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+    <!-- END: Page Border -->
+
+    <!--
+    Additional Classes:
+        .nk-header-opaque
+-->
+    <header class="nk-header nk-header-opaque">
+
+        <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-sticky
+            .nk-navbar-transparent
+            .nk-navbar-autohide
+            .nk-navbar-light
+            .nk-navbar-no-link-effect
+    -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
+            <div class="container">
+                <div class="nk-nav-table">
+
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="assets/images/logo.png" alt="" width="90">
+                    </a>
+
+
+                    <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                        <li class="  ">
+                            <a href="index.html" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="  ">
+                            <a href="pricing.html" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </span>
+                                <span>Price</span>
+                            </a>
+                        </li>
+                        <li class="  nk-drop-item">
+                            <a href="#" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </span>
+                                <span>Games</span>
+                            </a>
+                            <ul class="dropdown">
+                                <li class="  ">
+                                    <a href="games-esports.html">
+                                        E-Sports</a>
+                                </li>
+                                <li class="  ">
+                                    <a href="games-vr.html">
+                                        VR (Virtual Reality)</a>
+                                </li>
+                                <!--
+                                <li class="  ">
+                                    <a href="documentation.html">
+                                        Premium (No Additional Cost)</a>
+                                </li>
+                                -->
+                            </ul>
+                        </li>
+                        <!--
+                        <li class="active nk-mega-item nk-drop-item">
+                            <a href="#" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-certificate"></i>
+                                </span>
+                                <span>MVP</span>
+                            </a>
+                            <div class="dropdown">
+                                <div class="bg-image" style="background-image: url('https://cdn.dribbble.com/users/181443/screenshots/3837513/image.png')"></div>
+                                <ul>
+
+                                    <li>
+
+                                        <ul>
+                                            <li class="  ">
+                                                <a href="element-video-blocks.html">
+                                                    Whats MVP?</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-gif.html">
+                                                    MVP Prices</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-forms.html">
+                                                    MVP Sign Up</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li>
+
+                                        <ul>
+                                            <li class="  ">
+                                                <a href="element-info-boxes.html">
+                                                    Resurve / Book A Seat</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-call-to-action.html">
+                                                    MVP Prices</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-pagination.html">
+                                                    MVP News!</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-pricing-tables.html">
+                                                    Gifting System</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li>
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        -->
+                        <li class=" ">
+                            <a href="https://discord.gg/nPCbBZD">
+                                <span class="icon">
+                                    <i class="fab fa-discord"></i>
+                                </span>
+                                <span>Discord</span>
+                            </a>
+                        </li>
+                        <li class="  ">
+                        <li class="  ">
+                            <a href="https://www.facebook.com/VRGaming719/">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-square"></i>
+                                </span>
+                                <span>Facebook</span>
+                        </li>
+                    </ul>
+
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-nav-mobile">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+    </header>
+
+    <!--
+    START: Navbar Mobile
+
+    Additional Classes:
+        .nk-navbar-left-side
+        .nk-navbar-right-side
+        .nk-navbar-lg
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+-->
+    <div id="nk-nav-mobile" class="nk-navbar nk-navbar-side nk-navbar-left-side nk-navbar-overlay-content hidden-lg-up">
+        <div class="nano">
+            <div class="nano-content">
+                <a href="index.html" class="nk-nav-logo">
+                    <img src="assets/images/logo.png" alt="" width="90">
+                </a>
+                <div class="nk-navbar-mobile-content">
+                    <ul class="nk-nav">
+                        <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Navbar Mobile -->
+    <!--copynav-->
+
+    <div class="nk-main">
+
+
+        <!-- START: Header Title -->
+        <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+        .nk-header-title-boxed
+-->
+        <div class="nk-header-title nk-header-title-md nk-header-title-parallax-opacity">
+            <div class="bg-image">
+                <div style="background-image: url('https://i.ytimg.com/vi/BGtROJeMPeE/maxresdefault.jpg');"></div>
+            </div>
+            <div class="nk-header-table">
+                <div class="nk-header-table-cell">
+                    <div class="container">
+
+
+                        <h1 class="nk-title">Free 2 Play Game Of The Month: League of Legends</h1>
+
+                        <h2 class="nk-sub-title">Metascore: 78 / User Score: 5.5</h2>
+
+                        <div class="nk-gap-2"></div>
+
+                        <a class="nk-video-fullscreen-toggle" href="https://youtu.be/0nlJuwO0GDs">
+                            <span class="nk-video-icon">
+                                <i class="fa fa-play pl-5"></i>
+                            </span>
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END: Header Title -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/2gUtfBmw86Y">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://wallpapercave.com/wp/wp2585282.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Fortnite</h2>
+                        <h3 class="nk-sub-title">Metascore: 81 / User Score: 3.3 / Opencritic: N/A</h3>
+                        <div class="nk-gap"></div>
+                        <p>Fortnite Battle Royale is the completely free 100-player PvP mode in Fortnite. One giant map. A battle
+                            bus. Fortnite building skills and destructible environments combined with intense PvP combat.
+                            The last one standing wins.</p>
+                        <a href="https://www.epicgames.com/fortnite/en-US/home" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/0nlJuwO0GDs">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://images2.alphacoders.com/842/thumb-1920-842165.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">League of Legends</h2>
+                        <h3 class="nk-sub-title">Metascore: 78 / User Score: 5.5 / Opencritic: N/A</h3>
+                        <div class="nk-gap"></div>
+                        <p>League of Legends is a multiplayer online battle arena video game developed and published by Riot
+                            Games for Microsoft Windows and macOS.</p>
+                        <a href="https://na.leagueoflegends.com/en/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/sQb46Kyh-xA">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://images.wallpaperscraft.com/image/hearthstone_heroes_of_warcraft_box_sword_smoke_pattern_95366_1920x1080.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Hearthstone</h2>
+                        <h3 class="nk-sub-title">Metascore: 88 / User Score: 6.1 / Opencritic: 88</h3>
+                        <div class="nk-gap"></div>
+                        <p>Pick up your cards and throw down the gauntlet! In Hearthstone, you play the hero in a fast-paced,
+                            whimsical card game of cunning strategy. In minutes, you’ll be unleashing powerful cards to sling
+                            spells, summon minions, and seize control of an ever-shifting battlefield. Whether it’s your
+                            first card game or you’re an experienced pro, the depth and charm of Hearthstone will draw you
+                            in.
+                        </p>
+                        <a href="https://playhearthstone.com/en-us/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/0ecv0bT9DEo">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://blzmedia-a.akamaihd.net/heroes/media/wallpaper/Fall_of_Kings_Crest_1920x1200.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">HEROES OF THE STORM</h2>
+                        <h3 class="nk-sub-title">Metascore: 86 / User Score: 6.5 / Opencritic: 84</h3>
+                        <div class="nk-gap"></div>
+                        <p>Heroes of the Storm™ is a raucous online team brawler starring your favorite Blizzard characters.
+                            Build and customize heroes from across every Blizzard universe to suit your play style. Team
+                            up with your friends and engage in fast-paced mayhem across varied battlegrounds that impact
+                            strategy and change the way you play the game.</p>
+                        <a href="https://heroesofthestorm.com/en-us/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/HCeQMe2xdJM">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://bnetcmsus-a.akamaihd.net/cms/template_resource/2s/2SZV67PP7FC41510083813775.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">World of Warcraft</h2>
+                        <h3 class="nk-sub-title">Metascore: 88 / User Score: 7.3 / Opencritic: 88</h3>
+                        <div class="nk-gap"></div>
+                        <p>World of Warcraft is a massively multiplayer online role-playing game released in 2004 by Blizzard
+                            Entertainment. It is the fourth released game set in the Warcraft fantasy universe.</p>
+                        <a href="https://worldofwarcraft.com/en-us/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/jaXss09JDjQ">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://bnetcmsus-a.akamaihd.net/cms/blog_header/ci/CIGT53U8ZP6M1509744317189.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">STARCRAFT II</h2>
+                        <h3 class="nk-sub-title">Metascore: 88 / User Score: 8.3 / Opencritic: 87</h3>
+                        <div class="nk-gap"></div>
+                        <p>StarCraft II is a sequel to the real-time strategy game StarCraft, announced on May 19, 2007, at
+                            the Blizzard World Wide Invitational in Seoul, South Korea.[9][10] It is set to be released as
+                            a trilogy.</p>
+                        <a href="https://starcraft2.com/en-us/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/KU6Ra-P746k">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://images4.alphacoders.com/865/thumb-1920-865058.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Battlerite</h2>
+                        <h3 class="nk-sub-title">Metascore: 85 / User Score: 7.5 / Opencritic: 83</h3>
+                        <div class="nk-gap"></div>
+                        <p>Battlerite is an action-packed Team Arena Brawler focused on competitive PvP combat. Fight side by
+                            side with teammates to the sound of the roaring crowd in vibrant, colosseum-style surroundings.
+                            The arena awaits!</p>
+                        <a href="https://www.battlerite.com/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <a href="https://store.steampowered.com/app/504370/Battlerite/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="fab fa-steam-square"></i>
+                            </span>
+                            <span>Steam Page</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/zCDICqjyoxI">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://wallpapercave.com/wp/wp2108895.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Dauntless</h2>
+                        <h3 class="nk-sub-title">Metascore: N/A / User Score: N/A / Opencritic: N/A</h3>
+                        <div class="nk-gap"></div>
+                        <p>Dauntless is a co-op action RPG (currently in Open Beta on PC). Battle ferocious Behemoths, craft
+                            powerful weapons, and forge your legend in the Shattered Isles.</p>
+                        <a href="https://playdauntless.com/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/Co1hFzAy3-Y">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://images2.alphacoders.com/474/thumb-1920-474206.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Dota 2</h2>
+                        <h3 class="nk-sub-title">Metascore: 90 / User Score: 6.5 / Opencritic: 87</h3>
+                        <div class="nk-gap"></div>
+                        <p>Dota 2 is a free-to-play multiplayer online battle arena video game developed and published by Valve
+                            Corporation.
+                        </p>
+                        <a href="http://www.dota2.com/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <a href="https://store.steampowered.com/app/570/Dota_2/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="fab fa-steam-square"></i>
+                            </span>
+                            <span>Steam Page</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/2k5-7jqhMOI">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('http://i.computer-bild.de/imgs/1/0/7/7/4/1/4/3/f0142d7439b3c734.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Realm Royale</h2>
+                        <h3 class="nk-sub-title">Metascore: N/A / User Score: N/A / Opencritic: N/A</h3>
+                        <div class="nk-gap"></div>
+                        <p>Realm Royale, previously known as Paladins: Battlegrounds, is a free-to-play battle royale third-person
+                            shooter video game in development by Hi-Rez Studios. The game features multiple character classes
+                            each with unique abilities.</p>
+                        <a href="LINKHERE" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+  <!-- START: Footer -->
+    <!--
+    Additional Classes:
+        .nk-footer-parallax
+        .nk-footer-parallax-opacity
+-->
+<footer class="nk-footer nk-footer-parallax nk-footer-parallax-opacity">
+    <img class="nk-footer-top-corner" src="assets/images/footer-corner.png" alt="">
+
+    <div class="container">
+        <div class="nk-gap-2"></div>
+        <div class="nk-footer-logos">
+            <a href="#" target="_blank">
+                <img class="nk-img" src="assets/images/logo.gif" alt="" width="120">
+            </a>
+            <a href="https://www.oculus.com/" target="_blank">
+                <img class="oculus" src="https://www.telekom.de/is-bin/INTERSHOP.static/WFS/EKI-PK-Site/EKI-PK/-/themen/entertainment/virtual-reality/page/images/oculus-badge.png"
+                    alt="" width="120">
+            </a>
+            <a href="#" target="_blank">
+                <img class="nk-img" src="assets/images/footer-logo-pegi-18.png" alt="" width="46">
+            </a>
+            <a href="#" target="_blank">
+                <img class="nk-img" src="assets/images/footer-logo-18-restricted.png" alt="" width="160">
+            </a>
+        </div>
+        <div class="nk-gap"></div>
+
+        <p>
+            &copy; 2018 WASD Republic Game LLC. All other trademarks or trade names are the property of their
+            respective owners. All Rights Reserved.
+        </p>
+        <div class="nk-footer-links">
+            <a href="#" class="link-effect">Terms of Service</a>
+            <span>|</span>
+            <a href="#" class="link-effect">Privacy Policy</a>
+        </div>
+
+        <div class="nk-gap-4"></div>
+    </div>
+</footer>
+<!-- END: Footer -->
+
+
+</div>
+
+<!--
+START: Share Buttons
+.nk-share-buttons-left
+-->
+<div class="nk-share-buttons nk-share-buttons-left">
+    <ul>
+        <li>
+            <span class="nk-share-icon" title="Share page on Facebook" data-share="facebook">
+                <span class="icon fab fa-facebook"></span>
+            </span>
+            <span class="nk-share-name">Facebook</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on Twitter" data-share="twitter">
+                <span class="icon fab fa-twitter"></span>
+            </span>
+            <span class="nk-share-name">Twitter</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on Google+" data-share="google-plus">
+                <span class="icon fab fa-google-plus"></span>
+            </span>
+            <span class="nk-share-name">Google Plus</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on Pinterest" data-share="pinterest">
+                <span class="icon fab fa-pinterest"></span>
+            </span>
+            <span class="nk-share-name">Pinterest</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on LinkedIn" data-share="linkedin">
+                <span class="icon fab fa-linkedin"></span>
+            </span>
+            <span class="nk-share-name">LinkedIn</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on VK" data-share="vk">
+                <span class="icon fab fa-vk"></span>
+            </span>
+            <span class="nk-share-name">Vkontakte</span>
+        </li>
+    </ul>
+</div>
+
+
+<!--
+START: Side Buttons
+.nk-side-buttons-visible
+-->
+<div class="nk-side-buttons nk-side-buttons-visible">
+    <ul>
+        <li>
+            <a href="https://discord.gg/nPCbBZD" class="nk-btn nk-btn-style-2 nk-btn-md">
+                <span class="icon">
+                    <i class="fab fa-discord"></i>
+                </span>
+                <span>Discord</span>
+            </a>
+        </li>
+        <li>
+            <span class="nk-btn nk-btn-lg nk-btn-icon nk-bg-audio-toggle">
+                <span class="icon">
+                    <span class="ion-android-volume-up nk-bg-audio-pause-icon"></span>
+                    <span class="ion-android-volume-off nk-bg-audio-play-icon"></span>
+                </span>
+            </span>
+        </li>
+        <li class="nk-scroll-top">
+            <span class="nk-btn nk-btn-lg nk-btn-icon">
+                <span class="icon ion-ios-arrow-up"></span>
+            </span>
+        </li>
+    </ul>
+</div>
+<!-- END: Side Buttons -->
+
+<!-- START: Scripts -->
+
+<!-- GSAP -->
+<script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+<script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
+<script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Sticky Kit -->
+<script src="assets/bower_components/sticky-kit/dist/sticky-kit.min.js"></script>
+
+<!-- Jarallax -->
+<script src="assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
+
+<!-- Flickity -->
+<script src="assets/bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+
+<!-- Isotope -->
+<script src="assets/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+
+<!-- Photoswipe -->
+<script src="assets/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+<script src="assets/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+<!-- Typed.js -->
+<script src="assets/bower_components/typed.js/dist/typed.min.js"></script>
+
+<!-- Jquery Form -->
+<script src="assets/bower_components/jquery-form/jquery.form.js"></script>
+
+<!-- Jquery Validation -->
+<script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<!-- Jquery Countdown + Moment -->
+<script src="assets/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+<script src="assets/bower_components/moment/min/moment.min.js"></script>
+<script src="assets/bower_components/moment-timezone/builds/moment-timezone-with-data.js"></script>
+
+<!-- Hammer.js -->
+<script src="assets/bower_components/hammer.js/hammer.min.js"></script>
+
+<!-- nK Share -->
+<script src="assets/plugins/nk-share/nk-share.js"></script>
+
+<!-- NanoSroller -->
+<script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+
+<!-- SoundManager2 -->
+<script src="assets/bower_components/SoundManager2/script/soundmanager2-nodebug-jsmin.js"></script>
+
+<!-- DateTimePicker -->
+<script src="assets/bower_components/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+<!-- Keymaster -->
+<script src="assets/bower_components/keymaster/keymaster.js"></script>
+
+<!-- Summernote -->
+<script src="assets/bower_components/summernote/dist/summernote.min.js"></script>
+
+<!-- Prism -->
+<script src="assets/bower_components/prism/prism.js"></script>
+
+<!-- GODLIKE -->
+<script src="assets/js/godlike.min.js"></script>
+<script src="assets/js/godlike-init.js"></script>
+<!-- END: Scripts -->
+
+
+
+</body>
+
+</html>

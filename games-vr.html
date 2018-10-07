@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <title>WASD Republic</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/bower_components/fontawesome/css/all.css">
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/bower_components/ionicons/css/ionicons.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/navigation.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/bower_components/flickity/dist/flickity.min.css">
+
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/default-skin/default-skin.css">
+
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/datetimepicker/build/jquery.datetimepicker.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/navigation.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/prism/themes/prism-tomorrow.css">
+
+    <!-- Summernote -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/summernote/dist/summernote.css">
+
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/godlike.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+
+<body>
+    <!-- START: Page Preloader -->
+    <div class="nk-preloader">
+        <!--
+         Preloader animation
+         data-close-... data used for closing preloader
+         data-open-...  data used for opening preloader
+    -->
+        <div class="nk-preloader-bg" style="background-color: #000;" data-close-frames="23" data-close-speed="1.2"
+            data-close-sprites="./assets/images/preloader-bg.png" data-open-frames="23" data-open-speed="1.2"
+            data-open-sprites="./assets/images/preloader-bg-bw.png">
+        </div>
+
+        <div class="nk-preloader-content">
+            <div>
+                <img class="nk-img" src="assets/images/logo.gif" alt="" width="35%">
+                <div class="nk-preloader-animation"></div>
+            </div>
+        </div>
+
+        <div class="nk-preloader-skip">Skip</div>
+    </div>
+    <!-- END: Page Preloader -->
+
+    <!-- START: Page Background -->
+    <div class="nk-page-background op-5" data-bg-mp4="assets/video/bg-2.mp4" data-bg-webm="assets/video/bg-2.webm"
+        data-bg-ogv="assets/video/bg-2.ogv" data-bg-poster="assets/video/bg-2.jpg"></div>
+    <!-- END: Page Background -->
+
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+    <!-- END: Page Border -->
+
+    <!--
+    Additional Classes:
+        .nk-header-opaque
+-->
+    <header class="nk-header nk-header-opaque">
+
+        <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-sticky
+            .nk-navbar-transparent
+            .nk-navbar-autohide
+            .nk-navbar-light
+            .nk-navbar-no-link-effect
+    -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
+            <div class="container">
+                <div class="nk-nav-table">
+
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="assets/images/logo.png" alt="" width="90">
+                    </a>
+
+
+                    <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                        <li class="  ">
+                            <a href="index.html" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="  ">
+                            <a href="pricing.html" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </span>
+                                <span>Price</span>
+                            </a>
+                        </li>
+                        <li class="  nk-drop-item">
+                            <a href="#" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </span>
+                                <span>Games</span>
+                            </a>
+                            <ul class="dropdown">
+                                <li class="  ">
+                                    <a href="games-esports.html">
+                                        E-Sports</a>
+                                </li>
+                                <li class="  ">
+                                    <a href="games-vr.html">
+                                        VR (Virtual Reality)</a>
+                                </li>
+                                <!--
+                                <li class="  ">
+                                    <a href="documentation.html">
+                                        Premium (No Additional Cost)</a>
+                                </li>
+                                -->
+                            </ul>
+                        </li>
+                        <!--
+                        <li class="active nk-mega-item nk-drop-item">
+                            <a href="#" class=" ">
+                                <span class="icon">
+                                    <i class="fas fa-certificate"></i>
+                                </span>
+                                <span>MVP</span>
+                            </a>
+                            <div class="dropdown">
+                                <div class="bg-image" style="background-image: url('https://cdn.dribbble.com/users/181443/screenshots/3837513/image.png')"></div>
+                                <ul>
+
+                                    <li>
+
+                                        <ul>
+                                            <li class="  ">
+                                                <a href="element-video-blocks.html">
+                                                    Whats MVP?</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-gif.html">
+                                                    MVP Prices</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-forms.html">
+                                                    MVP Sign Up</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li>
+
+                                        <ul>
+                                            <li class="  ">
+                                                <a href="element-info-boxes.html">
+                                                    Resurve / Book A Seat</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-call-to-action.html">
+                                                    MVP Prices</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-pagination.html">
+                                                    MVP News!</a>
+                                            </li>
+                                            <li class="  ">
+                                                <a href="element-pricing-tables.html">
+                                                    Gifting System</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li>
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        -->
+                        <li class=" ">
+                            <a href="https://discord.gg/nPCbBZD">
+                                <span class="icon">
+                                    <i class="fab fa-discord"></i>
+                                </span>
+                                <span>Discord</span>
+                            </a>
+                        </li>
+                        <li class="  ">
+                        <li class="  ">
+                            <a href="https://www.facebook.com/VRGaming719/">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-square"></i>
+                                </span>
+                                <span>Facebook</span>
+                        </li>
+                    </ul>
+
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-nav-mobile">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+    </header>
+
+    <!--
+    START: Navbar Mobile
+
+    Additional Classes:
+        .nk-navbar-left-side
+        .nk-navbar-right-side
+        .nk-navbar-lg
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+-->
+    <div id="nk-nav-mobile" class="nk-navbar nk-navbar-side nk-navbar-left-side nk-navbar-overlay-content hidden-lg-up">
+        <div class="nano">
+            <div class="nano-content">
+                <a href="index.html" class="nk-nav-logo">
+                    <img src="assets/images/logo.png" alt="" width="90">
+                </a>
+                <div class="nk-navbar-mobile-content">
+                    <ul class="nk-nav">
+                        <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Navbar Mobile -->
+    <!--copynav-->
+
+    <div class="nk-main">
+
+
+        <!-- START: Header Title -->
+        <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+        .nk-header-title-boxed
+-->
+        <div class="nk-header-title nk-header-title-md nk-header-title-parallax-opacity">
+            <div class="bg-image">
+                <div style="background-image: url('https://i.ytimg.com/vi/BGtROJeMPeE/maxresdefault.jpg');"></div>
+            </div>
+            <div class="nk-header-table">
+                <div class="nk-header-table-cell">
+                    <div class="container">
+
+
+                        <h1 class="nk-title">Free 2 Play Game Of The Month: League of Legends</h1>
+
+                        <h2 class="nk-sub-title">Metascore: 78 / User Score: 5.5</h2>
+
+                        <div class="nk-gap-2"></div>
+
+                        <a class="nk-video-fullscreen-toggle" href="https://youtu.be/0nlJuwO0GDs">
+                            <span class="nk-video-icon">
+                                <i class="fa fa-play pl-5"></i>
+                            </span>
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END: Header Title -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/2CaGPLxemJw">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('http://freelives.net/wp-content/uploads/2016/12/gorn_logoo_Alpha-0218.png');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Gorn</h2>
+                        <h3 class="nk-sub-title">RECENT REVIEWS: Very Positive (91)</h3>
+                        <h3 class="nk-sub-title">ALL REVIEWS: Overwhelmingly Positive (2,229)</h3>
+                        <div class="nk-gap"></div>
+                        <p>GORN is a ludicrously violent VR gladiator simulator, made by Free Lives, the developers of Broforce
+                            and Genital Jousting.</p>
+                        <a href="http://freelives.net/games/gorn/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <a href="https://store.steampowered.com/app/578620/GORN/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="fab fa-steam-square"></i>
+                            </span>
+                            <span>Steam Page</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://www.youtube.com/watch?v=3rIjcRK_BNU">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://scontent.oculuscdn.com/v/t64.5771-25/q92/s720x720/12504685_193213451482257_8710906791182991360_n.jpg?_nc_cat=0&oh=1d9555809ea63be5122c5c76405c8a5f&oe=5BA26914');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Beat Saber</h2>
+                        <h3 class="nk-sub-title">RECENT REVIEWS:Overwhelmingly Positive (556)</h3>
+                        <h3 class="nk-sub-title">ALL REVIEWS:Overwhelmingly Positive (5,204)</h3>
+                        <div class="nk-gap"></div>
+                        <p>Beat Saber is a VR rhythm game where your goal is to slash the beats which perfectly fit into precisely
+                            handcrafted music.</p>
+                        <a href="http://beatsaber.com/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <a href="https://store.steampowered.com/app/620980/Beat_Saber/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="fab fa-steam-square"></i>
+                            </span>
+                            <span>Steam Page</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/MIK4D0kVlIs">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://static-assets-prod.epicgames.com/roborecall/static/webpack/5f7d6bc442e88fa501f9279fd3c903c8.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Robo Recall</h2>
+                        <h3 class="nk-sub-title">Ratings & Reviews:</h3>
+                        <h3 class="nk-sub-title">5 stars: 83%</h3>
+                        <div class="nk-gap"></div>
+                        <p>Robo Recall is an action-packed virtual reality first-person shooter built by Epic exclusively for
+                            Oculus Touch. Explore realistic environments as an agent tasked with recalling rogue robots while
+                            unlocking an expanding arsenal of weapons.</p>
+                        <a href="https://www.epicgames.com/roborecall/en-US/home" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <a href="https://www.oculus.com/experiences/rift/1081190428622821/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                            <span>Oculus Page</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
+                <!-- START: Video Block 2 -->
+                <div class="nk-box text-white">
+                    <div class="nk-video-fullscreen-toggle-right">
+                        <a class="nk-video-fullscreen-toggle" href="https://youtu.be/MIK4D0kVlIs">
+                            <span class="nk-video-icon">
+                                <i class="fa fa-play pl-5"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="bg-video-row row">
+                        <div class="col-lg-6 push-lg-6">
+                            <div class="bg-video bg-video-parallax" style="background-image: url('https://i.ytimg.com/vi/3A2umlmPlqY/maxresdefault.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="nk-gap-5"></div>
+        
+                                <h2 class="h1 nk-title">Pavlov VR</h2>
+                                <h3 class="nk-sub-title">Ratings & Reviews:</h3>
+                                <h3 class="nk-sub-title">5 stars: 83%</h3>
+                                <div class="nk-gap"></div>
+                                <p>Robo Recall is an action-packed virtual reality first-person shooter built by Epic exclusively for
+                                    Oculus Touch. Explore realistic environments as an agent tasked with recalling rogue robots while
+                                    unlocking an expanding arsenal of weapons.</p>
+                                <a href="https://www.epicgames.com/roborecall/en-US/home" class="nk-btn nk-btn-style-2 nk-btn-md">
+                                    <span class="icon">
+                                        <i class="far fa-compass"></i>
+                                    </span>
+                                    <span>WebPage</span>
+                                </a>
+                                <a href="https://www.oculus.com/experiences/rift/1081190428622821/" class="nk-btn nk-btn-style-2 nk-btn-md">
+                                    <span class="icon">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                    <span>Oculus Page</span>
+                                </a>
+                                <div class="nk-gap-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Video Block 2 -->
+  <!-- START: Footer -->
+    <!--
+    Additional Classes:
+        .nk-footer-parallax
+        .nk-footer-parallax-opacity
+-->
+<footer class="nk-footer nk-footer-parallax nk-footer-parallax-opacity">
+    <img class="nk-footer-top-corner" src="assets/images/footer-corner.png" alt="">
+
+    <div class="container">
+        <div class="nk-gap-2"></div>
+        <div class="nk-footer-logos">
+            <a href="#" target="_blank">
+                <img class="nk-img" src="assets/images/logo.gif" alt="" width="120">
+            </a>
+            <a href="https://www.oculus.com/" target="_blank">
+                <img class="oculus" src="https://www.telekom.de/is-bin/INTERSHOP.static/WFS/EKI-PK-Site/EKI-PK/-/themen/entertainment/virtual-reality/page/images/oculus-badge.png"
+                    alt="" width="120">
+            </a>
+            <a href="#" target="_blank">
+                <img class="nk-img" src="assets/images/footer-logo-pegi-18.png" alt="" width="46">
+            </a>
+            <a href="#" target="_blank">
+                <img class="nk-img" src="assets/images/footer-logo-18-restricted.png" alt="" width="160">
+            </a>
+        </div>
+        <div class="nk-gap"></div>
+
+        <p>
+            &copy; 2018 WASD Republic Game LLC. All other trademarks or trade names are the property of their
+            respective owners. All Rights Reserved.
+        </p>
+        <div class="nk-footer-links">
+            <a href="#" class="link-effect">Terms of Service</a>
+            <span>|</span>
+            <a href="#" class="link-effect">Privacy Policy</a>
+        </div>
+
+        <div class="nk-gap-4"></div>
+    </div>
+</footer>
+<!-- END: Footer -->
+
+
+</div>
+
+<!--
+START: Share Buttons
+.nk-share-buttons-left
+-->
+<div class="nk-share-buttons nk-share-buttons-left">
+    <ul>
+        <li>
+            <span class="nk-share-icon" title="Share page on Facebook" data-share="facebook">
+                <span class="icon fab fa-facebook"></span>
+            </span>
+            <span class="nk-share-name">Facebook</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on Twitter" data-share="twitter">
+                <span class="icon fab fa-twitter"></span>
+            </span>
+            <span class="nk-share-name">Twitter</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on Google+" data-share="google-plus">
+                <span class="icon fab fa-google-plus"></span>
+            </span>
+            <span class="nk-share-name">Google Plus</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on Pinterest" data-share="pinterest">
+                <span class="icon fab fa-pinterest"></span>
+            </span>
+            <span class="nk-share-name">Pinterest</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on LinkedIn" data-share="linkedin">
+                <span class="icon fab fa-linkedin"></span>
+            </span>
+            <span class="nk-share-name">LinkedIn</span>
+        </li>
+        <li>
+            <span class="nk-share-icon" title="Share page on VK" data-share="vk">
+                <span class="icon fab fa-vk"></span>
+            </span>
+            <span class="nk-share-name">Vkontakte</span>
+        </li>
+    </ul>
+</div>
+
+
+<!--
+START: Side Buttons
+.nk-side-buttons-visible
+-->
+<div class="nk-side-buttons nk-side-buttons-visible">
+    <ul>
+        <li>
+            <a href="https://discord.gg/nPCbBZD" class="nk-btn nk-btn-style-2 nk-btn-md">
+                <span class="icon">
+                    <i class="fab fa-discord"></i>
+                </span>
+                <span>Discord</span>
+            </a>
+        </li>
+        <li>
+            <span class="nk-btn nk-btn-lg nk-btn-icon nk-bg-audio-toggle">
+                <span class="icon">
+                    <span class="ion-android-volume-up nk-bg-audio-pause-icon"></span>
+                    <span class="ion-android-volume-off nk-bg-audio-play-icon"></span>
+                </span>
+            </span>
+        </li>
+        <li class="nk-scroll-top">
+            <span class="nk-btn nk-btn-lg nk-btn-icon">
+                <span class="icon ion-ios-arrow-up"></span>
+            </span>
+        </li>
+    </ul>
+</div>
+<!-- END: Side Buttons -->
+
+<!-- START: Scripts -->
+
+<!-- GSAP -->
+<script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+<script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
+<script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Sticky Kit -->
+<script src="assets/bower_components/sticky-kit/dist/sticky-kit.min.js"></script>
+
+<!-- Jarallax -->
+<script src="assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
+
+<!-- Flickity -->
+<script src="assets/bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+
+<!-- Isotope -->
+<script src="assets/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+
+<!-- Photoswipe -->
+<script src="assets/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+<script src="assets/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+<!-- Typed.js -->
+<script src="assets/bower_components/typed.js/dist/typed.min.js"></script>
+
+<!-- Jquery Form -->
+<script src="assets/bower_components/jquery-form/jquery.form.js"></script>
+
+<!-- Jquery Validation -->
+<script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<!-- Jquery Countdown + Moment -->
+<script src="assets/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+<script src="assets/bower_components/moment/min/moment.min.js"></script>
+<script src="assets/bower_components/moment-timezone/builds/moment-timezone-with-data.js"></script>
+
+<!-- Hammer.js -->
+<script src="assets/bower_components/hammer.js/hammer.min.js"></script>
+
+<!-- nK Share -->
+<script src="assets/plugins/nk-share/nk-share.js"></script>
+
+<!-- NanoSroller -->
+<script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+
+<!-- SoundManager2 -->
+<script src="assets/bower_components/SoundManager2/script/soundmanager2-nodebug-jsmin.js"></script>
+
+<!-- DateTimePicker -->
+<script src="assets/bower_components/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+<!-- Keymaster -->
+<script src="assets/bower_components/keymaster/keymaster.js"></script>
+
+<!-- Summernote -->
+<script src="assets/bower_components/summernote/dist/summernote.min.js"></script>
+
+<!-- Prism -->
+<script src="assets/bower_components/prism/prism.js"></script>
+
+<!-- GODLIKE -->
+<script src="assets/js/godlike.min.js"></script>
+<script src="assets/js/godlike-init.js"></script>
+<!-- END: Scripts -->
+
+
+
+</body>
+
+</html>

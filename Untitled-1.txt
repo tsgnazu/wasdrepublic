@@ -1,0 +1,35 @@
+        <!-- START: Video Block 2 -->
+        <div class="nk-box text-white">
+            <div class="nk-video-fullscreen-toggle-right">
+                <a class="nk-video-fullscreen-toggle" href="https://youtu.be/zCDICqjyoxI">
+                    <span class="nk-video-icon">
+                        <i class="fa fa-play pl-5"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="bg-video-row row">
+                <div class="col-lg-6 push-lg-6">
+                    <div class="bg-video bg-video-parallax" style="background-image: url('https://wallpapercave.com/wp/wp2108895.jpg');"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="nk-gap-5"></div>
+
+                        <h2 class="h1 nk-title">Name (Game)</h2>
+                        <h3 class="nk-sub-title">Metascore: N/A / User Score: N/A / Opencritic: N/A</h3>
+                        <div class="nk-gap"></div>
+                        <p>DISCRPSION.</p>
+                        <a href="LINKHERE" class="nk-btn nk-btn-style-2 nk-btn-md">
+                            <span class="icon">
+                                <i class="far fa-compass"></i>
+                            </span>
+                            <span>WebPage</span>
+                        </a>
+                        <div class="nk-gap-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Video Block 2 -->
